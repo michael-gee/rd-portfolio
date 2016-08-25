@@ -1,0 +1,386 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  /* Makes it to where 1em = 10px so 1.6em = 16px */
+  font-size: 62.5%;
+  background-color: #EEEEEE;
+}
+
+h2 {
+  font-size: 3em;
+  font-family:"Raleway", arial, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-size: 2.5em;
+  font-weight: normal;
+  font-family: "Raleway", arial, serif;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+/* HORIZONTAL LINE CSS*/
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    max-width: 65%;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.clear {
+  clear: both;
+}
+
+/* GENERAL END */
+
+/* HEADER */
+header {
+    font-family: "Raleway", arial, serif;
+}
+
+.nav-heading {  
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3.2em;
+}
+
+/* HEADER END */
+
+/* NAVIGATION */
+.nav {
+  margin: 0;
+  height: 100px;
+  background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+}
+
+.group-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  margin: 0;
+  list-style-type: none;
+  float: right;
+  padding-top: 40px;
+  padding-right: 5%;
+}
+
+.navbar ul li {
+  display: inline-block;
+  font-size: 1.8em;
+}
+
+.navbar ul li a:link {
+  text-decoration: none;
+  color: black;
+  padding: 13px;
+  margin-left: 2px;
+  border-radius: 10%;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+}
+
+.navbar ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* NAV MEDIA QUERIES*/
+@media (max-width: 785px) { 
+  .nav-heading {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+.navbar ul {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 25px 0;
+    margin: 0;
+    background-color: #E9EBEE;
+  } 
+}
+
+/* Make NAV Text smaller for mobile*/
+@media (max-width: 345px) { 
+  h1 {
+    font-size: 2.6em;
+  }
+  
+  .navbar ul li {
+    font-size: 1.4em;
+  }
+}
+
+/* NAVIGATION END*/ 
+
+/* BODY */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.about {
+  background-color: #bbb;
+  padding: 17px;
+}
+
+.intro {
+  max-width: 60%;
+  font-family: "Raleway", arial;
+  float: left;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+.portfolio-pic img {
+  max-width: 200px;
+  padding-left: 85px;
+}
+
+/* ABOUT MEDIA QUERIES */
+@media (max-width: 830px) { 
+  .intro {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 800px) { 
+  .intro { 
+    float: none;
+    max-width: 100%;
+    padding-top: 50px;
+  }
+  
+  .portfolio-pic {
+    width: 50%;
+    margin:  0 auto;
+  }
+  
+  .portfolio-pic img {
+    padding: 0;
+    padding-top: 15px;
+    max-width: 100%;
+    clear: both;
+  }
+}
+
+/* Make Text smaller when reduced to mobile size */
+@media (max-width: 345px) { 
+  .intro {
+    font-size: 1.7em;
+    padding-top: 35px;
+  }
+}
+
+
+/* SKILLS DIV */
+svg {
+  width: 150px;
+  max-width: 100%;
+}
+
+.skills {
+  clear: both;
+}
+
+.skills-table table {
+  width: 100%;
+}
+
+.skills-table th {
+  font-size: 1.8em;
+}
+
+.skills-table td {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+
+/* PROJECTS DIV */
+.left-project {
+  max-width: 40%;
+  float: left;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
+.right-project {
+  max-width: 40%;
+  float: right;
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+
+.left-project img, .right-project img {
+  max-width: 100%;
+}
+
+/* PROJECTS MEDIA QUERIES */
+@media (max-width: 800px) { 
+  .left-project {
+    max-width: 100%;
+    margin: 25px;
+    float: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .right-project {
+    max-width: 100%;
+    margin: 25px;
+    float: none;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+
+/* CONTACT DIV */
+.contact {
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.input-form form{
+  max-width: 40%;
+  padding-left: 50px;
+  float: left;
+}
+
+.get-in-touch {
+  max-width: 40%;
+  padding-right: 50px;
+  float: right;
+  text-align: center;
+  font-family: arial, serif;
+  line-height: 250%;
+}
+
+.text-field {
+  background-color: #EEE;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: 1.8em;
+  width: 20em;
+  max-width: 100%;
+}
+
+textarea {
+  background-color: #EEE;
+  border: 2px solid white;
+  font-size: 1.8em;
+  font-family: arial, serif;
+  padding: 17px;
+  max-width: 100%;
+  resize: none;
+}
+
+.social-icon {
+  width: 80px;
+  padding: 5px;
+}
+
+#contact-button {
+  padding: 15px 25px;
+  border-radius: 5%;
+  background-color: #286090;
+  width: 420px;
+  max-width: 90%;
+  color: #EEE;
+}
+
+/* CONTACT MEDIA QUERIES */
+@media (max-width: 915px) {
+  .get-in-touch {
+    padding: 5px;
+  }
+} 
+
+@media (max-width: 650px) {
+  .input-form  form{
+    float: none;
+    padding: 0;
+    text-align:center;
+    max-width: 100%;
+  }
+  
+  .full-width-input {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .get-in-touch {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (max-width: 460px) {
+  .input-form  form {
+      font-size: .8em;
+    }
+  }
+/* BODY END */
+
+/* FOOTER */
+footer {
+  margin: 0;
+  clear: both;
+  font-family: arial;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: .75em;
+  background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+}
