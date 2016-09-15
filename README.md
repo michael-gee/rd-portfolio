@@ -5,3 +5,7 @@ In this project I chose to use my own CSS instead of using Bootstrap because I d
 
 
 # (Rough Draft)
+
+CodePen link is here: http://codepen.io/michaelg22/full/yJWXqQ/
+
+Github link is here: https://michaelgee22.github.io/my-first-portfolio/index.html
