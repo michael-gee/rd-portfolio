@@ -10,4 +10,4 @@ I also believe without using bootstrap, I will have a better understanding of CS
 
 CodePen link is here: http://codepen.io/michaelg22/full/yJWXqQ/
 
-Github link is here: https://michaelgee22.github.io/portfolio-rough-draft/
+Github link is here: https://michaelgee22.github.io/portfolio-rd/
